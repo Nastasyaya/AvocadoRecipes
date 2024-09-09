@@ -13,9 +13,9 @@ struct SettingsRowView: View {
     
     var body: some View {
         HStack {
-          Text(label).foregroundColor(Color.gray)
-          Spacer()
-          Text(caption)
+            Text(label).foregroundColor(Color.gray)
+            Spacer()
+            Text(caption)
         }
     }
 }

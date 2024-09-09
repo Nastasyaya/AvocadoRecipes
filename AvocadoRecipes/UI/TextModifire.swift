@@ -10,11 +10,11 @@ import SwiftUI
 struct TitleModifier: ViewModifier {
     let customPadding: CGFloat
     
-  func body(content: Content) -> some View {
-    content
-      .font(.system(.title, design: .serif))
-      .fontWeight(.bold)
-      .foregroundColor(Color("ColorGreenAdaptive"))
-      .padding(customPadding)
-  }
+    func body(content: Content) -> some View {
+        content
+            .font(.system(.title, design: .serif))
+            .fontWeight(.bold)
+            .foregroundColor(Color("ColorGreenAdaptive"))
+            .padding(customPadding)
+    }
 }

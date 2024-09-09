@@ -82,5 +82,5 @@ struct RecipeCardView: View {
 
 // MARK: - PREVIEW
 #Preview {
-        RecipeCardView(viewModel: recipesData.first!)
+    RecipeCardView(viewModel: recipesData.first!)
 }

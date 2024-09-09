@@ -8,42 +8,35 @@
 import SwiftUI
 
 struct ContentView: View {
-    enum Destination {
-        case mainView
-        case ripening
-        case settings
-    }
-    
-//    init() {
-//        let appearance = UITabBarAppearance()
-//        appearance.configureWithTransparentBackground()
-//        UITabBar.appearance().standardAppearance = appearance
-//        
-//        if #available(iOS 15.0, *) {
-//            UITabBar.appearance().scrollEdgeAppearance = appearance
-//        }
-//    }
+    @State private var selectedTab = 0
     
     var body: some View {
         TabView {
             MainView()
-            .tabItem {
-                Image("tabicon-book")
-                Text("Recipes")
-            }
+                .tabItem {
+                    Image("tabicon-book")
+                    Text("Recipes")
+                }
+                .tag(0)
+            
             RipeningStageView()
                 .tabItem {
                     Image("tabicon-avocado")
                     Text("Ripening")
                 }
+                .tag(1)
             
             SettingsView()
                 .tabItem {
                     Image("tabicon-settings")
                     Text("Settings")
                 }
+                .tag(2)
         }
-        .foregroundStyle(.black)
+        .tint(.green)
+        .onAppear {
+            UITabBar.appearance().unselectedItemTintColor = UIColor.gray
+        }
     }
 }
 

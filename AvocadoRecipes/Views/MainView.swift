@@ -34,7 +34,7 @@ struct MainView: View {
                 
                 // MARK: - AVOCADO FACTS
                 Text("Avocado Facts")
-                  .modifier(TitleModifier(customPadding: 8))
+                    .modifier(TitleModifier(customPadding: 8))
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(alignment: .top, spacing: 60) {
@@ -48,7 +48,7 @@ struct MainView: View {
                 
                 // MARK: - RECIPE CARDS
                 Text("Avocado Recipes")
-                  .modifier(TitleModifier(customPadding: 8))
+                    .modifier(TitleModifier(customPadding: 8))
                 
                 VStack(spacing: 20) {
                     ForEach(recipes) { recipe in
@@ -57,17 +57,17 @@ struct MainView: View {
                 }
                 .padding(.horizontal)
                 .frame(maxWidth: 640)
-
+                
                 // MARK: - FOOTER
                 VStack(spacing: 20) {
-                  Text("All About Avocados")
-                    .modifier(TitleModifier(customPadding: 8))
+                    Text("All About Avocados")
+                        .modifier(TitleModifier(customPadding: 8))
                     
-                  Text("Everything you wanted to know about avocados but were too afraid to ask.")
-                    .font(.system(.body, design: .serif))
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.gray)
-                    .frame(minHeight: 60)
+                    Text("Everything you wanted to know about avocados but were too afraid to ask.")
+                        .font(.system(.body, design: .serif))
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color.gray)
+                        .frame(minHeight: 60)
                 } //: VSTACK FOOTER
                 .frame(maxWidth: 640)
                 .padding()

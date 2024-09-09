@@ -63,12 +63,12 @@ struct RecipeDetailView: View {
                 VStack {
                     ForEach(viewModel.instructions, id: \.self) { item in
                         VStack(spacing: 5) {
-                                ChevronImageView()
-                                Text(item)
+                            ChevronImageView()
+                            Text(item)
                                 .multilineTextAlignment(.center)
-                                    .font(.system(.body, design: .serif))
-                                    .padding()
-                            }
+                                .font(.system(.body, design: .serif))
+                                .padding()
+                        }
                     }
                 }
                 .padding(.horizontal, 20)
@@ -101,7 +101,7 @@ struct RecipeDetailView: View {
             }
         }
         .onAppear() {
-          self.pulsate.toggle()
+            self.pulsate.toggle()
         }
     }
 }

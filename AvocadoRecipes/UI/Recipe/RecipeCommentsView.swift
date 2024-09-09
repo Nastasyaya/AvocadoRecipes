@@ -14,9 +14,9 @@ struct RecipeCommentsView: View {
     
     var body: some View {
         HStack(spacing: 2) {
-          Image(systemName: "\(imageName)")
-          Text(
-            "\(Text(label)) \(caption)")
+            Image(systemName: "\(imageName)")
+            Text(
+                "\(Text(label)) \(caption)")
         }
         .font(.footnote)
         .foregroundColor(Color.gray)
