@@ -8,11 +8,11 @@
 import Foundation
 
 struct RipeningModel: Identifiable {
-  var id = UUID()
-  var image: String
-  var stage: String
-  var title: String
-  var description: String
-  var ripeness: String
-  var instruction: String
+  let id = UUID()
+  let image: String
+  let stage: String
+  let title: String
+  let description: String
+  let ripeness: String
+  let instruction: String
 }

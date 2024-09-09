@@ -8,8 +8,8 @@
 import Foundation
 
 struct HeaderModel: Identifiable {
-  var id = UUID()
-  var image: String
-  var headline: String
-  var subheadline: String
+  let id = UUID()
+  let image: String
+  let headline: String
+  let subheadline: String
 }

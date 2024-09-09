@@ -10,7 +10,7 @@ import SwiftUI
 struct RecipeCommentsView: View {
     let imageName: String
     let label: String
-    let caption: String
+    let caption: Int
     
     var body: some View {
         HStack(spacing: 2) {
@@ -24,5 +24,5 @@ struct RecipeCommentsView: View {
 }
 
 #Preview {
-    RecipeCommentsView(imageName: "person.fill", label: "Services:", caption: "4")
+    RecipeCommentsView(imageName: "person.fill", label: "Services:", caption: 4)
 }

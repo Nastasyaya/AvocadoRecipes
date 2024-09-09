@@ -8,7 +8,7 @@
 import Foundation
 
 struct FactsModel: Identifiable {
-  var id = UUID()
-  var image: String
-  var content: String
+  let id = UUID()
+  let image: String
+  let content: String
 }

@@ -18,6 +18,7 @@ struct RipeningStageView: View {
                     RipeningView(viewModel: item)
                 }
             }
+            .padding(.horizontal)
         }
     }
 }

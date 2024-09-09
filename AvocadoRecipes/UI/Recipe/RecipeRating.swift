@@ -11,7 +11,7 @@ struct RecipeRating: View {
     let viewModel: RecipeModel
     
     var body: some View {
-        HStack(alignment: .center, spacing: 5) {
+        HStack(spacing: 5) {
             ForEach(1...(viewModel.rating), id: \.self) { _ in
                 Image(systemName: "star.fill")
                     .font(.body)
