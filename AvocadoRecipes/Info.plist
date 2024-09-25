@@ -6,8 +6,6 @@
 	<dict>
 		<key>UIColorName</key>
 		<string>ColorGreenDark</string>
-		<key>UIImageName</key>
-		<string>avocado</string>
 		<key>UIImageRespectsSafeAreaInsets</key>
 		<true/>
 	</dict>
